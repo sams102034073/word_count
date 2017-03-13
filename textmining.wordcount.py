@@ -24,7 +24,7 @@ for i in range(0,a):
 for symbol in string.punctuation:
     stopwords.add(symbol)
 
-l = ([w for w in allwords if w not in stopwords and w.isalpha()])
+l = ([w for w in allwords if w not in stopwords and w.isalnum()])
 
 counter = Counter(l)
 for name, count in counter.most_common():
